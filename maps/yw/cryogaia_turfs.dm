@@ -96,10 +96,6 @@ CRYOGAIA_TURF_CREATE(/turf/simulated/mineral/floor)
 			"uranium" = 10,
 			"platinum" = 10,
 			"hematite" = 20,
-			"copper" = 8,
-			"tin" = 4,
-			"bauxite" = 4,
-			"rutile" = 4,
 			"carbon" = 20,
 			"diamond" = 1,
 			"gold" = 8,
@@ -113,17 +109,13 @@ CRYOGAIA_TURF_CREATE(/turf/simulated/mineral/floor)
 			"uranium" = 5,
 			"platinum" = 5,
 			"hematite" = 35,
-			"copper" = 15,
-			"tin" = 10,
-			"bauxite" = 10,
-			"rutile" = 10,
 			"carbon" = 35,
 			"gold" = 3,
 			"silver" = 3,
 			"phoron" = 25,
 			"lead" = 1))
-	if(mineral_name && (mineral_name in ore_data))
-		mineral = ore_data[mineral_name]
+	if(mineral_name && (mineral_name in GLOB.ore_data))
+		mineral = GLOB.ore_data[mineral_name]
 		UpdateMineral()
 	update_icon()
 
@@ -149,8 +141,8 @@ CRYOGAIA_TURF_CREATE(/turf/simulated/mineral/floor)
 			"diamond" = 2,
 			"gold" = 7,
 			"silver" = 7))
-	if(mineral_name && (mineral_name in ore_data))
-		mineral = ore_data[mineral_name]
+	if(mineral_name && (mineral_name in GLOB.ore_data))
+		mineral = GLOB.ore_data[mineral_name]
 		UpdateMineral()
 	update_icon()
 
@@ -177,8 +169,8 @@ CRYOGAIA_TURF_CREATE(/turf/simulated/mineral/floor)
 			"diamond" = 2,
 			"gold" = 7,
 			"silver" = 7))
-	if(mineral_name && (mineral_name in ore_data))
-		mineral = ore_data[mineral_name]
+	if(mineral_name && (mineral_name in GLOB.ore_data))
+		mineral = GLOB.ore_data[mineral_name]
 		UpdateMineral()
 	update_icon()
 
